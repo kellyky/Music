@@ -49,6 +49,6 @@ class BandsController < ApplicationController
   end
 
   def band_params
-    params.expect(band: [ :name, :genre ])
+    params.require(:band).permit(:name, :genre, musician_ids: [] )
   end
 end
