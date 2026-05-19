@@ -15,3 +15,8 @@ genres = %w[avant-guard jazz blues]
 band_names.each do |name|
   Band.find_or_create_by!(name:, genre: genres.shuffle.pop)
 end
+
+# Musicians
+%w[Matthew Mark Mary Ruth].each do |name|
+  Musician.find_or_create_by(name:)
+end
