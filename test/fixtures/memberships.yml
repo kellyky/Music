@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+jan_in_fundamentals:
+  band: one
+  musician: one
+  active: true
+
+mark_in_fundamentals:
+  band: one
+  musician: two
+  active: false
+
+jan_in_feral_kid_theory:
+  band: two
+  musician: one
+  active: false
+
+mark_in_feral_kid_theory:
+  band: two
+  musician: two
+  active: true
