@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# Bands
+band_names = %w[Fundamentals_Mke Feral_Kid_Theory]
+genres = %w[avant-guard jazz blues]
+
+band_names.each do |name|
+  Band.find_or_create_by!(name:, genre: genres.shuffle.pop)
+end
