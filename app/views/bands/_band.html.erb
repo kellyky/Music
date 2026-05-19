@@ -7,4 +7,12 @@
     <strong class="block font-medium mb-1">Genre:</strong>
     <%= band.genre %>
   </div>
+  <div>
+    <strong class="block font-medium mb-1">Musicians:</strong>
+    <ul>
+    <% band.memberships.each do |member| %>
+      <li><%= member.musician.name %> (<%= member.active ? "Active" : "Inactive" %>)</li>
+    <% end %>
+    </ul>
+  </div>
 </div>
